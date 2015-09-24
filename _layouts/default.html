@@ -5,11 +5,21 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
+			<style>
+				div.relative {
+			 	position: relative;
+    				left: 30px;
+				border: 3px solid #8AC007;
+					}
+			</style>
 		</head>
 		<body>
 			<nav>
 	    		<ul>
-	    			<img src="https://cloud.githubusercontent.com/assets/14129754/10080753/0ea63260-630f-11e5-89a9-f1f4842fe781.jpg" alt="some_text">
+	    			<div class="relative">
+				<img src="https://cloud.githubusercontent.com/assets/14129754/10080753/0ea63260-630f-11e5-89a9-f1f4842fe781.jpg" alt="some_text">
+				</div>
+	    			
 	        		<li><a href="/">Home</a></li>
 		        	<li><a href="/about">About</a></li>
 	        		<li><a href="/cv">CV</a></li>
