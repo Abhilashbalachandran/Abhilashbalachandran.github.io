@@ -1,0 +1,39 @@
+---
+layout: default
+title: Abhilash Balachandran, Robotics Enthusiast
+---
+<div class="blurb">
+	<p>Projects:</p>
+<ul>
+<li>Locomotion of bipedal systems:</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Walking gait of bipedal robot based on inverted pendulum model and cart pole model. The swing foot follows a spline trajectory. The arms of the biped swing in an effort to minimize the net torque at the stance foot. Torque at the stance foot arises due to the motion of the body relative to the foot. The arms of the biped swing to produce a counter torque which minimizes the net torque at the stance foot.&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>Motion planning of humanoid with optimum torque:</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 25 Degree of freedom humanoid like the acroban,poppy is considered here. Joints are made to move in such a way that the arms follow a specified path and the net torque at the joints is minimum. This involves computing torque at the joints of a high dimensional tree type system like a humanoid. Also, dynamic analysis is to be performed in the double support phase. The net torque computed is used as the objective function for an optimization algorithm working on constrained gradient descent algorithm. In addition to this, collision checks can be included. Since, velocities and accelerations of tree type systems is complex to analyse, the joints are assumed to be moving quasistatically.</p>
+<p>&nbsp;</p>
+<ul>
+<li>Control of inverted pundulum and segaway:</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Designed both controllers and observer for an inverted pendulum and a segaway. The results are validated using models made from lego kits.&nbsp;</p>
+<p>&nbsp;</p>
+<ul>
+<li>Optimal motion planning of humanoids in a cluttered environemnt:</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The problem statement was to move the hands of the humanoid to reach a particular goal position avoiding obstacles. The motion of the humanoid should be optimal.</p>
+<p>For optimal motion planning, the asymptotically optimal algorithm C-BiRRT* (constrained Bi-directional Rapidly Exploring Random Trees) is used. Challenge was to implement this algorithm on high dimensional systems like humanoids. Another challenge was the computation of inverse kinematic solutions in the double support phase. Simulations were performed on Open-Hubo robot in the OpenRave platform.&nbsp;</p>
+<p>Reaching of ball under table scenario:</p>
+<p>Reaching of ball in shelf scenario:</p>
+<p>Currently working on implementing the same with B-FMT* and comparing the results. Results are being documented into a journal paper.</p>
+<ul>
+<li>Inverse Kinematics Of humanoid systems with support polygon reshaping:</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Most of the inverse kinematic methods used today are offline solvers. The aim in this project is to develop an online realtime inverse kinematics solver. In order to find inverse kinematic solutions, Artificial neural networks are used for regression and classification.</p>
+<p>The whole workspace of the humanoid is divided into discrete pixels. Sample data is generated in each of these pixels using forward kinematics. Neural networks are used to fit data in each of these pixels. After training, the network provides the joint angles for any position of the end effector which in this case is the hand of the robot.</p>
+<p>For support polygon reshaping, the whole support plane is divided in discrete voxels. For each position of end effector (hand) the best voxel of the foot is noted. &nbsp;Using this sample data, a classifier is used to classify the sample data. Now, for any new end effector position, the classifier gives the position of the supporting foot.</p>
+<ul>
+<li>Minimization of losses in a y duct:</li>
+</ul>
+</div><!-- /.blurb -->
