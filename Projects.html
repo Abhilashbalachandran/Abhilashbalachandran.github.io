@@ -15,11 +15,6 @@ title: Abhilash Balachandran, Robotics Enthusiast
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 25 Degree of freedom humanoid like the acroban,poppy is considered here. Joints are made to move in such a way that the arms follow a specified path and the net torque at the joints is minimum. This involves computing torque at the joints of a high dimensional tree type system like a humanoid. Also, dynamic analysis is to be performed in the double support phase. The net torque computed is used as the objective function for an optimization algorithm working on constrained gradient descent algorithm. In addition to this, collision checks can be included. Since, velocities and accelerations of tree type systems is complex to analyse, the joints are assumed to be moving quasistatically.</p>
 <p>&nbsp;</p>
 <ul>
-<li>Control of inverted pundulum and segaway:</li>
-</ul>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Designed both controllers and observer for an inverted pendulum and a segaway. The results are validated using models made from lego kits.&nbsp;</p>
-<p>&nbsp;</p>
-<ul>
 <li>Optimal motion planning of humanoids in a cluttered environemnt:</li>
 </ul>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The problem statement was to move the hands of the humanoid to reach a particular goal position avoiding obstacles. The motion of the humanoid should be optimal.</p>
@@ -33,6 +28,11 @@ title: Abhilash Balachandran, Robotics Enthusiast
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Most of the inverse kinematic methods used today are offline solvers. The aim in this project is to develop an online realtime inverse kinematics solver. In order to find inverse kinematic solutions, Artificial neural networks are used for regression and classification.</p>
 <p>The whole workspace of the humanoid is divided into discrete pixels. Sample data is generated in each of these pixels using forward kinematics. Neural networks are used to fit data in each of these pixels. After training, the network provides the joint angles for any position of the end effector which in this case is the hand of the robot.</p>
 <p>For support polygon reshaping, the whole support plane is divided in discrete voxels. For each position of end effector (hand) the best voxel of the foot is noted. &nbsp;Using this sample data, a classifier is used to classify the sample data. Now, for any new end effector position, the classifier gives the position of the supporting foot.</p>
+<ul>
+<li>Control of inverted pundulum and segaway:</li>
+</ul>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Designed both controllers and observer for an inverted pendulum and a segaway. The results are validated using models made from lego kits.&nbsp;</p>
+<p>&nbsp;</p>
 <ul>
 <li>Minimization of losses in a y duct:</li>
 </ul>
