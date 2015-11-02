@@ -2,7 +2,6 @@
 layout: default
 title: Abhilash Balachandran, Robotics Enthusiast
 ---
-<div class="blurb">
 <h2>Projects:</h2>
 <ul>
 <li><strong>Locomotion of bipedal systems:</strong></li>
@@ -12,20 +11,29 @@ title: Abhilash Balachandran, Robotics Enthusiast
 <ul>
 <li><strong>Motion planning of humanoid with optimum torque:</strong></li>
 </ul>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 25 Degree of freedom humanoid like the acroban,poppy is considered here. Joints are made to move in such a way that the arms follow a specified path and the net torque at the joints is minimum. This involves computing torque at the joints of a high dimensional tree type system like a humanoid. Also, dynamic analysis is to be performed in the double support phase. The net torque computed is used as the objective function for an optimization algorithm working on constrained gradient descent algorithm. In addition to this, collision checks can be included. Since, velocities and accelerations of tree type systems is complex to analyse, the joints are assumed to be moving quasistatically.</p>
-<p style="text-align: left;">&nbsp;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 25 Degree of freedom humanoid like the acroban,poppy is considered here. Joints are made to move in such a way that the arms follow a specified path and the net torque at the joints is minimum. This involves computing torque at the joints of a high dimensional tree type system like a humanoid. Also, dynamic analysis is to be performed in the double support phase. The net torque computed is used as the objective function for an optimization algorithm working on constrained gradient descent algorithm. In addition to this, collision checks can be included. Since, velocities and accelerations of tree type systems is complex to analyse, the joints are assumed to be moving quasistatically.</p>
+<p>&nbsp;</p>
 <ul>
 <li><strong>Optimal motion planning of humanoids in a cluttered environement:</strong></li>
 </ul>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The problem statement was to move the hands of the humanoid to reach a particular pre-grasp goal position avoiding obstacles. The motion of the humanoid should be optimal.</p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; For optimal motion planning, the asymptotically optimal algorithm C-BiRRT* (constrained Bi-directional Rapidly Exploring Random Trees) is used. Challenge was to implement this algorithm on high dimensional systems like humanoids. Another challenge was the computation of inverse kinematic solutions in the double support phase. Simulations were performed on Open-Hubo robot in the OpenRave platform. <em>(videos to be added soon)</em></p>
-<p style="text-align: left;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Currently working on implementing the same with B-FMT* (bi-directional Fast Marching Trees) and comparing the results. Results are being documented into a journal paper.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The problem statement was to move the hands of the humanoid to reach a particular pre-grasp goal position avoiding obstacles. The motion of the humanoid should be optimal.</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; For optimal motion planning, the asymptotically optimal algorithm C-BiRRT* (constrained Bi-directional Rapidly Exploring Random Trees) is used. Challenge was to implement this algorithm on high dimensional systems like humanoids. Another challenge was the computation of inverse kinematic solutions in the double support phase. Simulations were performed on Open-Hubo robot in the OpenRave platform. <em>(videos to be added soon)</em></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Currently working on implementing the same with B-FMT* (bi-directional Fast Marching Trees) and comparing the results. Results are being documented into a journal paper.</p>
 <ul>
 <li><strong>Inverse Kinematics Of humanoid systems with support polygon reshaping:</strong></li>
 </ul>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Most of the inverse kinematic methods used today are offline solvers. The aim in this project is to develop an online realtime inverse kinematics solver. In order to find inverse kinematic solutions, Artificial neural networks are used for regression and classification.<em>(images&nbsp;to be added soon)</em></p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;The whole workspace of the humanoid is divided into discrete pixels. Sample data is generated in each of these pixels using forward kinematics. Neural networks are used to fit data in each of these pixels. After training, the network provides the joint angles for any position of the end effector which in this case is the hand of the robot.</p>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; For support polygon reshaping, the whole support plane is divided in discrete voxels. For each position of end effector (hand) the best voxel of the foot is noted. &nbsp;Using this sample data, a classifier is used to classify the sample data. Now, for any new end effector position, the classifier gives the position of the supporting foot.</p>
+<p>&nbsp;</p>
+<p><img src="https://cloud.githubusercontent.com/assets/14129754/10880761/dc6f94ba-8183-11e5-9a9b-6f2c44687db6.png" alt="The target point (red dot) cannot be reached without support polygon reshaping" width="236" height="223" /></p>
+<h5>The target point (red dot) cannot be reached without support polygon reshaping</h5>
+<p>&nbsp;</p>
+<p><img src="https://cloud.githubusercontent.com/assets/14129754/10880862/6ca56faa-8184-11e5-8c71-8013aaea93ec.png" alt="" width="235" height="222" /></p>
+<h5>The target point can now be reached by support polygon reshaping i.e by moving one of the foot. The joint configurations are found real time by inverse kinematics using artificial neural networks</h5>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
 <ul>
 <li><strong>Control of inverted pundulum and segaway:</strong></li>
 </ul>
